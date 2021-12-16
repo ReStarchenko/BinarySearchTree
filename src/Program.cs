@@ -13,6 +13,7 @@ namespace Lab7
                 new Option ("Добавить элемент", () => binaryTree.Add(int.Parse(Console.ReadLine()))),
                 new Option ("Удалить элемент", () => binaryTree.Remove(int.Parse(Console.ReadLine()))),
                 new Option ("Найти элемент", () => binaryTree.Find(int.Parse(Console.ReadLine()))),
+                new Option ("Вывод дерева", () => BTreePrinter(Print(binaryTree.Root)),
                 new Option ("Симметричный обход дерева", () => binaryTree.TraverseInOrder(binaryTree.Root)),
                 new Option ("Добавить случайные элементы", () => binaryTree.AddRandom())
 
